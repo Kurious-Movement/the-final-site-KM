@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Parkour Classes — Kurious Movement</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="site.js"></script>
+</head>
+<body class="bg-neutral-950 text-white">
+  <header class="fixed inset-x-0 top-0 z-40 backdrop-blur bg-neutral-900/40">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between text-white">
+      <a href="index.html" class="flex items-center gap-2 group">
+        <svg class="w-5 h-5 opacity-90 group-hover:opacity-100" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 3l9 8h-3v9h-5v-6H11v6H6v-9H3l9-8z"/>
+        </svg>
+        <span class="font-[Montserrat] font-extrabold tracking-wide text-white text-lg">KURIOUS <span class="text-k-red">MOVEMENT</span></span>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a class="hover:text-k-teal" href="parkour.html">Parkour</a>
+        <a class="hover:text-k-teal" href="training.html">PT / Group</a>
+        <a class="hover:text-k-teal" href="chase-tag.html">Chase Tag</a>
+        <div class="relative">
+          <button id="menuBtn" class="inline-flex items-center gap-1 hover:text-k-teal">Menu
+            <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.25 4.38a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"/></svg>
+          </button>
+          <div id="menu" class="hidden absolute right-0 mt-2 w-56 rounded-xl border border-white/10 bg-neutral-900/90 backdrop-blur shadow-lg">
+            <a class="menu-item" href="#contact">Contact us</a>
+            <a class="menu-item" href="about.html#learn-more">Learn more</a>
+            <a class="menu-item" href="about.html#purpose">Our purpose</a>
+            <a class="menu-item" href="pricing.html">Pricing</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="relative min-h-[70vh] flex items-end parallax" style="--bg:url('images/parkour-hero.jpg')">
+    <div class="absolute inset-0 bg-black/55"></div>
+    <div class="ribbon ribbon-red"></div>
+    <div class="ribbon ribbon-teal"></div>
+    <div class="relative z-10 max-w-5xl mx-auto px-6 pb-16 pt-28">
+      <h1 class="text-4xl sm:text-6xl font-extrabold drop-shadow">Parkour Classes</h1>
+      <p class="mt-3 text-white/90 max-w-2xl">Fun, progressive parkour for 8–11 YRS, 12–15 YRS, 16 YRS+, and Advanced. Learn safe landings, vaults, climbs, balance and flow—supported by an inclusive community.</p>
+    </div>
+  </section>
+
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <section>
+      <h2 class="text-2xl font-bold">Book a Trial</h2>
+      <p class="text-white/80 mt-1">Choose your age group below. You’ll be taken to Google Calendar to pick a date and get instant confirmation by email.</p>
+
+      <div class="mt-6 grid sm:grid-cols-4 gap-4">
+        <a href="https://calendar.app.google/oWCgXGtuzmJwygRw7" target="_blank" class="slot hover-white">10:00 — 8–11 YRS</a>
+        <a href="https://calendar.app.google/o3L8hJkAnzHH9g4o6" target="_blank" class="slot hover-white">11:00 — 12–15 YRS</a>
+        <a href="https://calendar.app.google/XS6RT6nbwm27DXGV9" target="_blank" class="slot hover-white">12:00 — 16 YRS+</a>
+        <a href="about.html#contact" class="slot-disabled" title="Message us to join">1:00 — Advanced<br><span class="text-xs opacity-70">Message us to book</span></a>
+      </div>
+    </section>
+
+    <section id="learn-more" class="mt-16">
+      <a href="about.html#learn-more" class="cta-learn">Kurious Movement is more than classes — learn more</a>
+    </section>
+  </main>
+
+  <footer id="contact" class="relative bg-neutral-950 text-neutral-300 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-6 py-12 grid sm:grid-cols-3 gap-8">
+      <div>
+        <div class="font-semibold text-white">Contact</div>
+        <p class="mt-2"><a class="hover:text-k-teal" href="mailto:Albury@KuriousMovement.com">Albury@KuriousMovement.com</a></p>
+        <p class="mt-1">Instagram: <a class="hover:text-k-teal" target="_blank" href="https://instagram.com/kuriousmovement">@kuriousmovement</a></p>
+        <p class="mt-1">Facebook: <a class="hover:text-k-teal" target="_blank" href="#">facebook.com/kuriousmovement</a></p>
+      </div>
+      <div>
+        <div class="font-semibold text-white">Visit</div>
+        <p class="mt-2">Albury–Wodonga • <a class="hover:text-k-teal" target="_blank" href="https://maps.google.com">Map</a></p>
+      </div>
+      <div>
+        <div class="font-semibold text-white">Quick links</div>
+        <p class="mt-2"><a class="hover:text-k-teal" href="parkour.html">Parkour</a> • <a class="hover:text-k-teal" href="training.html">PT/Group</a> • <a class="hover:text-k-teal" href="chase-tag.html">Chase Tag</a></p>
+        <p class="mt-2"><a class="hover:text-k-teal" href="about.html#learn-more">Learn more</a> • <a class="hover:text-k-teal" href="about.html#purpose">Our purpose</a> • <a class="hover:text-k-teal" href="pricing.html">Pricing</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

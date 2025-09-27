@@ -1,0 +1,40 @@
+:root{
+  --k-teal:#24948e;
+  --k-red:#FF1B1C;
+  --k-grey:#D6D6D6;
+}
+.text-k-teal{color:var(--k-teal)}
+.text-k-red{color:var(--k-red)}
+body{font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans';}
+
+.ribbon{ position:absolute; left:-10vw; right:-10vw; height:16vh; z-index:5; opacity:.95; pointer-events:none;}
+.ribbon-red{ bottom:18vh; background:var(--k-red); clip-path: polygon(0 35%, 100% 0, 100% 50%, 0 80%); }
+.ribbon-grey{ bottom:10vh; background:var(--k-grey); clip-path: polygon(0 30%, 100% 0, 100% 50%, 0 90%); }
+.ribbon-teal{ bottom:0; background:var(--k-teal); clip-path: polygon(0 10%, 100% 0, 100% 60%, 0 100%); }
+
+.card-option{position:relative; overflow:hidden; border-radius:1rem; border:1px solid rgba(255,255,255,.18);
+  background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03)); transition:.2s ease; }
+.card-option:hover{ transform:translateY(-3px) scale(1.01); box-shadow:0 10px 30px rgba(0,0,0,.35); }
+.card-inner{ padding:1.25rem 1.25rem 1.5rem; }
+.card-title{ font-family: 'Montserrat', system-ui; font-weight:800; font-size:1.25rem; line-height:1.2; margin-bottom:.25rem;}
+.card-copy{ color:#E5E7EB; font-size:.9rem;}
+
+.slot, .slot-disabled{ display:flex; align-items:center; justify-content:center; padding:.9rem 1rem; border-radius:.9rem; text-align:center; font-weight:800; letter-spacing:.02em; }
+.slot{ background:white; color:#111; border:1px solid rgba(255,255,255,.2)}
+.hover-white:hover{ background:white !important; color:#111 !important; }
+.slot-disabled{ background:rgba(255,255,255,.08); color:#c5c5c5; border:1px dashed rgba(255,255,255,.2); }
+
+.cta-learn{ display:inline-block; background:var(--k-red); color:white; padding:1rem 1.25rem; border-radius:1rem; font-weight:800; transition:.15s ease; }
+.cta-learn:hover{ transform:translateY(-2px); filter:brightness(1.05); }
+
+.menu-item{ display:block; padding:.6rem .9rem; color:#E5E7EB; }
+.menu-item:hover{ background:rgba(255,255,255,.06); color:white; }
+
+.feature{ background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); padding:.9rem 1rem; border-radius:.9rem; }
+
+.price-card{ background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); padding:1.25rem; border-radius:1rem; }
+.price-card h3{ font-weight:800; font-family: 'Montserrat', system-ui }
+.price{ font-size:2.25rem; font-weight:800; margin:.25rem 0; }
+.desc{ color:#E5E7EB }
+
+.parallax::before{ content:""; position:absolute; inset:0; background-image:var(--bg); background-size:cover; background-position:center; background-attachment:fixed; z-index:-1; }
